@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: aeficheros-mfe
+  labels:
+    app: aeficheros-mfe
+    app.kubernetes.io/component: aeficheros-mfe
+    app.kubernetes.io/instance: aeficheros-mfe
+    app.kubernetes.io/name: aeficheros-mfe
+    app.kubernetes.io/part-of: ae-app-frontend
+    app.openshift.io/runtime: aeficheros-mfe
+spec:
+#INIHOST
+  host: aeficheros-mfe-soporte-colsanitas-dev.apps.rm3.7wse.p1.openshiftapps.com
+#FINHOST
+  to:
+    kind: Service
+    name: aeficheros-mfe
+  tls:
+    termination: edge
