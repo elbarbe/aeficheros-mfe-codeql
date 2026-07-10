@@ -9,7 +9,7 @@ module.exports = (config, options) => {
     systemjsModuleName: "@ae/aeficheros"
   }));
 
-  singleSpaWebpackConfig.output.filename = 'aeficheros.39.0.0.js';
+  singleSpaWebpackConfig.output.filename = 'aeficheros.41.0.0.js';
 
   // Feel free to modify this webpack config however you'd like to
   return singleSpaWebpackConfig;
